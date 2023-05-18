@@ -1,0 +1,40 @@
+{
+    "name": "adityadees/laravel-bard",
+    "description": "A Laravel Package for Google Bard AI Chatbot",
+    "keyword": [
+        "google-bard",
+        "laravel",
+        "bard",
+        "bard-google",
+        "bard ai",
+        "bard chatbot"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Adityadees\\LaravelBard\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aditya Dharmawan Saputra",
+            "email": "adityadees@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdityaDees\\LaravelBard\\LaravelBardServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7|^8",
+        "illuminate/config": "^7|^8|^9|^10",
+        "illuminate/support": "^7|^8|^9|^10"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
