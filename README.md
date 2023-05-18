@@ -3,8 +3,8 @@
 
 
 ## INSTALATION
-- composer require adityadees/laravel-bard
-- php artisan vendor:publish --tag=laravel-lighthouse
+- `composer require adityadees/laravel-bard`
+- `php artisan vendor:publish --tag=laravel-lighthouse`
 - New file `laravel-bard.php` will created under `config` folder
 - Fill the `bard_token` with your token
 
