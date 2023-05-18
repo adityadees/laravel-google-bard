@@ -13,7 +13,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Adityadees\\LaravelBard\\": "src/"
+            "AdityaDees\\LaravelBard\\": "src/"
         }
     },
     "authors": [
