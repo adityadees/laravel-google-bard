@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AdityaDees\LaravelBard\Exceptions;
+namespace AdityaDees\LaravelGoogleBard\Exceptions;
 
 use Exception;
 

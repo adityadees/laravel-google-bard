@@ -1,5 +1,5 @@
 {
-    "name": "adityadees/laravel-bard",
+    "name": "adityadees/laravel-google-bard",
     "description": "A Laravel Package for Google Bard AI Chatbot",
     "keyword": [
         "google-bard",
@@ -13,7 +13,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "AdityaDees\\LaravelBard\\": "src/"
+            "AdityaDees\\LaravelGoogleBard\\": "src/"
         }
     },
     "authors": [
@@ -25,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AdityaDees\\LaravelBard\\LaravelBardServiceProvider"
+                "AdityaDees\\LaravelGoogleBard\\LaravelGoogleBardServiceProvider"
             ]
         }
     },

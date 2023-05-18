@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace AdityaDees\LaravelBard;
+namespace AdityaDees\LaravelGoogleBard;
 
-use AdityaDees\LaravelBard\Exceptions\ErrorException;
+use AdityaDees\LaravelGoogleBard\Exceptions\ErrorException;
 
 /**
- * LaravelBard
+ * LaravelGoogleBard
  *
  * @author Aditya Dharmawan Saputra @adityadees
  *
  */
 
-class LaravelBard
+class LaravelGoogleBard
 {
     private $proxies;
     private $timeout;
@@ -29,7 +29,7 @@ class LaravelBard
     {
         $this->proxies = $proxies;
         $this->timeout = $timeout;
-        $this->token = config('laravel-bard.bard_token');
+        $this->token = config('laravel-google-bard.bard_token');
         $headers = [
             "Host: bard.google.com",
             "X-Same-Domain: 1",
