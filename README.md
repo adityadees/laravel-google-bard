@@ -34,7 +34,7 @@ $bard["choices"];
 
 ## Example
 ```php
-$bard = (new LaravelBard())->get_answer('helo whats your name');
+$bard = (new LaravelBard())->get_answer('hello whats your name');
 dd($bard["content"]);
 ```
 <img width="1179" alt="image" src="https://github.com/adityadees/laravel-google-bard/assets/37553901/85a2026c-366f-40c6-b9f8-6012de9146dd">
