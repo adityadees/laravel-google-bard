@@ -13,7 +13,7 @@ class ErrorException extends Exception
         return new self("__Secure-1PSID value must end with a single dot. Enter correct __Secure-1PSID value.");
     }
 
-    public static function errorResponse(String $status): self
+    public static function errorResponse($status): self
     {
         return new self("Response Status: " . $status);
     }
