@@ -29,7 +29,7 @@ class LaravelBard
     {
         $this->proxies = $proxies;
         $this->timeout = $timeout;
-        $this->token = config('bard-laravel.bard_token');
+        $this->token = config('laravel-bard.bard_token');
         $headers = [
             "Host: bard.google.com",
             "X-Same-Domain: 1",
