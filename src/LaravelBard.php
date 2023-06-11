@@ -84,6 +84,11 @@ class LaravelBard
         return $matches[1];
     }
 
+    public function set_conversation_id(string $conversation_id)
+    {
+        $this->conversation_id = $conversation_id;
+    }
+
     public function get_answer($input_text)
     {
         $params = [
