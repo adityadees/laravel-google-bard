@@ -25,7 +25,7 @@ class LaravelBard
     private $reqid;
     private $SNlM0e;
 
-    public function __construct($timeout = 6, $proxies = null, $session = null)
+    public function __construct($timeout = 60, $proxies = null, $session = null)
     {
         $this->proxies = $proxies;
         $this->timeout = $timeout;
@@ -120,6 +120,11 @@ class LaravelBard
         ]);
 
         $resp = curl_exec($this->session);
+
+        if (curl_errno($this->session)) {
+            throw ErrorException::curlError(curl_error($this->session));
+        }
+
         $resp_dict = json_decode(explode("\n", $resp)[3], true)[0][2];
 
         if ($resp_dict === null) {

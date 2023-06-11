@@ -22,4 +22,9 @@ class ErrorException extends Exception
     {
         return new self("SNlM0e value not found in response. Check __Secure-1PSID value.");
     }
+
+    public static function curlError($error): self
+    {
+        return new self("Curl error: " . $error);
+    }
 }
